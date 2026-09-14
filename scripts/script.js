@@ -177,10 +177,10 @@ const typingText =
 
 const roles = [
 
-    "Software Developer",
-    "Java Developer",
+    "Backend Learner",
+    "Java Learner",
     "Spring Boot Learner",
-    "Web Developer",
+    "Web Learner",
     "Problem Solver"
 
 ];
