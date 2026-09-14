@@ -1258,22 +1258,15 @@ img {
 
 
 .image-frame {
-
     position: relative;
-
-    width: min(330px, 80%);
-
-    padding: 10px;
-
-    border:
-        1px solid var(--primary);
-
-    border-radius: 20px;
-
+    width: 330px;
+    height: 330px;
+    padding: 8px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
     box-shadow:
         0 0 40px
         rgba(56,189,248,0.12);
-
 }
 
 
@@ -1297,15 +1290,10 @@ img {
 
 
 .image-frame img {
-
     width: 100%;
-
-    aspect-ratio: 1 / 1;
-
+    height: 100%;
     object-fit: cover;
-
-    border-radius: 14px;
-
+    border-radius: 50%;
 }
 
 
