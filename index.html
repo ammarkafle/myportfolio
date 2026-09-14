@@ -1,169 +1,1373 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ammar Kafle | Website</title>
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Ammar Kafle - BCA student and aspiring software developer portfolio.">
+
+  <meta name="author"
+        content="Ammar Kafle">
+
+  <meta name="theme-color"
+        content="#050816">
+
+  <title>Ammar Kafle | Developer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">
-      <span>Ammar Kafle</span>
-    </div>
-    <ul>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-  </nav>
+<!-- =========================
+     SCROLL PROGRESS
+========================= -->
 
-  <!-- Header -->
-  <header>
-    <div class="header-left">
-      <img src="images/mypic.jpeg" alt="Ammar Kafle" class="profile-pic">
-    </div>
-    <div class="header-right">
-      <h1>Hi, I'm Ammar Kafle</h1>
-      <p>Aspiring Developer | Creative Thinker | Problem Solver</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </header>
+<div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- About Section -->
-  <section id="about" class="fade-section">
-    <h2>About Me</h2>
-    <div class="abouttext">
-      <p>
-Hello! I'm Ammar Kafle.<br><br>
 
-    </p>
+<!-- =========================
+     BACKGROUND EFFECTS
+========================= -->
+
+<div class="background-grid"></div>
+
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
+<div class="glow glow-three"></div>
+
+
+<!-- =========================
+     NAVIGATION
+========================= -->
+
+<nav class="navbar" id="navbar">
+
+  <div class="nav-container">
+
+    <a href="#home" class="logo">
+      <span class="logo-bracket">&lt;</span>
+      Ammar
+      <span class="logo-highlight">Kafle</span>
+      <span class="logo-bracket">/&gt;</span>
+    </a>
+
+
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+
+    <div class="nav-menu" id="navMenu">
+
+      <a href="#home" class="nav-link active">Home</a>
+
+      <a href="#about" class="nav-link">About</a>
+
+      <a href="#education" class="nav-link">Education</a>
+
+      <a href="#projects" class="nav-link">Projects</a>
+
+      <a href="#skills" class="nav-link">Skills</a>
+
+      <a href="#contact" class="nav-link">Contact</a>
+
+
+      <button class="theme-toggle"
+              id="themeToggle"
+              aria-label="Toggle dark and light mode">
+
+        <span id="themeIcon">☀</span>
+
+      </button>
+
     </div>
+
+  </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<main>
+
+  <section id="home" class="hero section">
+
+    <div class="hero-container">
+
+
+      <!-- LEFT -->
+
+      <div class="hero-content reveal">
+
+        <div class="status-badge">
+
+          <span class="status-dot"></span>
+
+          Available for learning & projects
+
+        </div>
+
+
+        <p class="hero-small-text">
+
+          Hello, I'm
+
+        </p>
+
+
+        <h1>
+
+          Ammar
+          <span>Kafle</span>
+
+        </h1>
+
+
+        <div class="typing-wrapper">
+
+          <span>I'm a </span>
+
+          <span id="typingText"
+                class="typing-text">
+                </span>
+
+          <span class="cursor">|</span>
+
+        </div>
+
+
+        <p class="hero-description">
+
+          BCA student passionate about software development,
+          Java, Spring Boot, web technologies and building
+          useful projects that solve real-world problems.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+          <a href="#projects"
+             class="btn btn-primary">
+
+            View My Projects
+            <span>→</span>
+
+          </a>
+
+
+          <a href="#contact"
+             class="btn btn-outline">
+
+            Contact Me
+
+          </a>
+
+        </div>
+
+
+        <!-- QUICK STATS -->
+
+        <div class="hero-stats">
+
+          <div class="stat">
+
+            <strong class="counter"
+                    data-target="4">
+              0
+            </strong>
+
+            <span>Projects</span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong class="counter"
+                    data-target="9">
+              0
+            </strong>
+
+            <span>Technologies</span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong class="counter"
+                    data-target="2026">
+              0
+            </strong>
+
+            <span>Learning Since</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT -->
+
+      <div class="hero-visual reveal">
+
+        <div class="code-card">
+
+          <div class="code-header">
+
+            <div class="window-buttons">
+
+              <span></span>
+              <span></span>
+              <span></span>
+
+            </div>
+
+            <span class="file-name">
+                        Ammar.java
+                    </span>
+
+          </div>
+
+
+          <div class="code-body">
+
+<pre><code>
+<span class="keyword">public class</span> <span class="class-name">Ammar</span> {
+
+    <span class="keyword">public static void</span>
+    <span class="method">main</span>(String[] args) {
+
+        String name =
+            <span class="string">"Ammar Kafle"</span>;
+
+        String role =
+            <span class="string">"Software Developer"</span>;
+
+        <span class="keyword">boolean</span> learning =
+            <span class="boolean">true</span>;
+
+        <span class="keyword">while</span>(learning) {
+
+            build();
+            learn();
+            improve();
+
+        }
+    }
+}
+</code></pre>
+
+          </div>
+
+
+          <div class="code-footer">
+
+                    <span>
+                        ● Java 17
+                    </span>
+
+            <span>
+                        ● Running
+                    </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="floating-card card-one">
+
+          <span>☕</span>
+
+          <div>
+            <strong>Code</strong>
+            <small>Every Day</small>
+          </div>
+
+        </div>
+
+
+        <div class="floating-card card-two">
+
+          <span>🚀</span>
+
+          <div>
+            <strong>Build</strong>
+            <small>Real Projects</small>
+          </div>
+
+        </div>
+
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+      </div>
+
+    </div>
+
+
+    <a href="#about"
+       class="scroll-down">
+
+      <span>Scroll to explore</span>
+
+      <span class="scroll-arrow">↓</span>
+
+    </a>
+
   </section>
 
- <!-- Education Section -->
-  <section id="education" class="fade-section">
-    <h2>Education</h2>
+
+  <!-- =========================
+       ABOUT
+  ========================= -->
+
+  <section id="about"
+           class="section content-section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-number">
+            01
+        </span>
+
+      <div>
+
+        <p class="section-label">
+          GET TO KNOW ME
+        </p>
+
+        <h2>
+          About <span>Me</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+      <div class="about-image reveal">
+
+        <div class="image-frame">
+
+          <img src="images/mypic.jpeg"
+               alt="Ammar Kafle">
+
+          <div class="image-corner corner-one"></div>
+          <div class="image-corner corner-two"></div>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-content reveal">
+
+        <h3>
+          Turning ideas into
+          <span>working software.</span>
+        </h3>
+
+
+        <p>
+
+          Hello! I'm Ammar Kafle, a BCA student and
+          aspiring software developer.
+
+        </p>
+
+
+        <p>
+
+          I'm currently building my foundation in
+          programming and software development while
+          exploring Java, Spring Boot, databases,
+          web development and Linux.
+
+        </p>
+
+
+        <p>
+
+          My goal is not only to learn programming
+          languages, but to understand how real
+          applications are designed, developed,
+          deployed and maintained.
+
+        </p>
+
+
+        <div class="about-info">
+
+          <div>
+            <span>Name</span>
+            <strong>Ammar Kafle</strong>
+          </div>
+
+          <div>
+            <span>Education</span>
+            <strong>BCA</strong>
+          </div>
+
+          <div>
+            <span>Focus</span>
+            <strong>Software Development</strong>
+          </div>
+
+          <div>
+            <span>Location</span>
+            <strong>Nepal</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       EDUCATION
+  ========================= -->
+
+  <section id="education"
+           class="section content-section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-number">
+            02
+        </span>
+
+      <div>
+
+        <p class="section-label">
+          MY JOURNEY
+        </p>
+
+        <h2>
+          Education <span>Journey</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
     <div class="timeline">
-      <div class="timeline-item first">
-        <h3>Secondary Education Examination (SEE)</h3>
-        <span>2014 AD - 2022 AD</span>
-        <p><strong>School:</strong>  Eden English Boarding School</p>
-        <p><strong>GPA:</strong>  3.15 out of 4</p>
+
+
+      <div class="timeline-line"></div>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot">
+          01
+        </div>
+
+        <div class="timeline-card">
+
+                <span class="timeline-date">
+                    2014 — 2022
+                </span>
+
+          <h3>
+            Secondary Education Examination
+          </h3>
+
+          <h4>
+            Eden English Boarding School
+          </h4>
+
+          <p>
+            Completed secondary level education.
+          </p>
+
+          <span class="grade">
+                    GPA: 3.15 / 4.00
+                </span>
+
+        </div>
+
       </div>
-      <div class="timeline-item second">
-        <h3>School Leaving Certificate (SLC)</h3>
-        <span>2022 AD - 2023 AD</span>
-        <p><strong>College:</strong>  Oxford Secondary School</p>
-        <p><strong>Stream:</strong>  Science (majors : Mathematics and Computer Science)</strong></p>
-        <p><strong>GPA:</strong>  Not Available </p>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot">
+          02
+        </div>
+
+        <div class="timeline-card">
+
+                <span class="timeline-date">
+                    2022 — 2023
+                </span>
+
+          <h3>
+            Science
+          </h3>
+
+          <h4>
+            Oxford Secondary School
+          </h4>
+
+          <p>
+            Studied Science with Mathematics
+            and Computer Science.
+          </p>
+
+          <span class="grade">
+                    GPA: Not Available
+                </span>
+
+        </div>
+
       </div>
-      <div class="timeline-item third">
-        <h3>School Leaving Certificate (SLC)</h3>
-        <span>2023 AD - 2025 AD</span>
-        <p><strong>College:</strong>  Shanti Namuna Secondary School</p>
-        <p><strong>Stream:</strong>  Management (majors : Mathematics and Computer Science)</strong></p>
-        <p><strong>GPA:</strong>  3.71 out of 4</p>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot">
+          03
+        </div>
+
+        <div class="timeline-card">
+
+                <span class="timeline-date">
+                    2023 — 2025
+                </span>
+
+          <h3>
+            Management
+          </h3>
+
+          <h4>
+            Shanti Namuna Secondary School
+          </h4>
+
+          <p>
+            Studied Management with Mathematics
+            and Computer Science.
+          </p>
+
+          <span class="grade">
+                    GPA: 3.71 / 4.00
+                </span>
+
+        </div>
+
       </div>
-      <div class="timeline-item fourth">
-        <h3>Bachelor's Degree</h3>
-        <span>2026 AD - 2029 AD</span>
-        <p><strong>College:</strong>  Crimson College Of Technology (CCT)</p>
-        <p><strong>Stream:</strong>  Bachelor of Computer Applications (BCA)</p>
-        <p><strong>GPA:</strong>  soon....</p>
+
+
+      <div class="timeline-item reveal">
+
+        <div class="timeline-dot">
+          04
+        </div>
+
+        <div class="timeline-card">
+
+                <span class="timeline-date">
+                    2026 — 2029
+                </span>
+
+          <h3>
+            Bachelor of Computer Applications
+          </h3>
+
+          <h4>
+            Crimson College Of Technology
+          </h4>
+
+          <p>
+            Currently pursuing BCA and developing
+            practical software development skills.
+          </p>
+
+          <span class="grade">
+                    GPA: In Progress
+                </span>
+
+        </div>
+
       </div>
+
     </div>
+
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="fade-section">
-    <h2>Projects</h2>
+
+  <!-- =========================
+       PROJECTS
+  ========================= -->
+
+  <section id="projects"
+           class="section content-section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-number">
+            03
+        </span>
+
+      <div>
+
+        <p class="section-label">
+          WHAT I'VE BUILT
+        </p>
+
+        <h2>
+          Featured <span>Projects</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <!-- PROJECT FILTER -->
+
+    <div class="project-filters reveal">
+
+      <button class="filter-btn active"
+              data-filter="all">
+        All
+      </button>
+
+      <button class="filter-btn"
+              data-filter="java">
+        Java
+      </button>
+
+      <button class="filter-btn"
+              data-filter="web">
+        Web
+      </button>
+
+      <button class="filter-btn"
+              data-filter="system">
+        Systems
+      </button>
+
+    </div>
+
+
     <div class="projects-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>MARKSHEET CALCULATOR</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 2</h3>
-        <p>NORMAL CALCULATOR</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 3</h3>
-        <p>BANK ATM SYSTEM</p>
-      </div>
-      <div class="project-card">
-        <h3>Project 4</h3>
-        <p>BIKE RENTAL SYSTEM</p>
-      </div>
+
+
+      <article class="project-card reveal"
+               data-category="java">
+
+        <div class="project-number">
+          01
+        </div>
+
+        <div class="project-icon">
+          📊
+        </div>
+
+        <span class="project-type">
+                JAVA
+            </span>
+
+        <h3>
+          Marksheet Calculator
+        </h3>
+
+        <p>
+          A Java-based application for calculating
+          marks, percentage and grades.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Java</span>
+          <span>OOP</span>
+          <span>Logic</span>
+
+        </div>
+
+        <div class="project-link">
+          View Project →
+        </div>
+
+      </article>
+
+
+      <article class="project-card reveal"
+               data-category="java">
+
+        <div class="project-number">
+          02
+        </div>
+
+        <div class="project-icon">
+          🧮
+        </div>
+
+        <span class="project-type">
+                JAVA
+            </span>
+
+        <h3>
+          Normal Calculator
+        </h3>
+
+        <p>
+          A calculator application demonstrating
+          Java operators, conditions and methods.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Java</span>
+          <span>Methods</span>
+          <span>Logic</span>
+
+        </div>
+
+        <div class="project-link">
+          View Project →
+        </div>
+
+      </article>
+
+
+      <article class="project-card reveal"
+               data-category="system">
+
+        <div class="project-number">
+          03
+        </div>
+
+        <div class="project-icon">
+          🏦
+        </div>
+
+        <span class="project-type">
+                SYSTEM
+            </span>
+
+        <h3>
+          Bank ATM System
+        </h3>
+
+        <p>
+          A console-based ATM system demonstrating
+          authentication, transactions and account logic.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Java</span>
+          <span>OOP</span>
+          <span>System</span>
+
+        </div>
+
+        <div class="project-link">
+          View Project →
+        </div>
+
+      </article>
+
+
+      <article class="project-card reveal"
+               data-category="system">
+
+        <div class="project-number">
+          04
+        </div>
+
+        <div class="project-icon">
+          🏍️
+        </div>
+
+        <span class="project-type">
+                SYSTEM
+            </span>
+
+        <h3>
+          Bike Rental System
+        </h3>
+
+        <p>
+          A rental management application for managing
+          bikes, customers and rental operations.
+        </p>
+
+        <div class="project-tags">
+
+          <span>Java</span>
+          <span>OOP</span>
+          <span>Database</span>
+
+        </div>
+
+        <div class="project-link">
+          View Project →
+        </div>
+
+      </article>
+
     </div>
+
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="fade-section">
-    <h2>Skills</h2>
+
+  <!-- =========================
+       SKILLS
+  ========================= -->
+
+  <section id="skills"
+           class="section content-section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-number">
+            04
+        </span>
+
+      <div>
+
+        <p class="section-label">
+          MY TECHNOLOGY STACK
+        </p>
+
+        <h2>
+          Skills & <span>Technologies</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
     <div class="skills-grid">
-      <div class="skill">
-        <h3>MS-Word</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:95%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>Java</h3>
+
+          <span>75%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="75%">
+          </div>
+
+        </div>
+
+        <small>
+          Core Java • OOP • Collections
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>MS-Excel</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>HTML & CSS</h3>
+
+          <span>90%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="90%">
+          </div>
+
+        </div>
+
+        <small>
+          Responsive Design • UI
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>MS-PowerPoint</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:85%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>JavaScript</h3>
+
+          <span>80%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="80%">
+          </div>
+
+        </div>
+
+        <small>
+          DOM • Events • APIs
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>HTML & CSS</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:90%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>C / C++</h3>
+
+          <span>70%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="70%">
+          </div>
+
+        </div>
+
+        <small>
+          Programming Fundamentals
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>JavaScript</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:80%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>PHP</h3>
+
+          <span>70%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="70%">
+          </div>
+
+        </div>
+
+        <small>
+          Web Programming
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>JAVA</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:75%"></div></div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-top">
+
+          <h3>MS Office</h3>
+
+          <span>85%</span>
+
+        </div>
+
+        <div class="skill-bar">
+
+          <div class="skill-progress"
+               data-width="85%">
+          </div>
+
+        </div>
+
+        <small>
+          Word • Excel • PowerPoint
+        </small>
+
       </div>
-      <div class="skill">
-        <h3>C++</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:70%"></div></div>
-      </div>
-       <div class="skill">
-        <h3>C</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:70%"></div></div>
-      </div>
-       <div class="skill">
-        <h3>PHP</h3>
-        <div class="skill-bar"><div class="skill-level" style="width:70%"></div></div>
-      </div>
+
     </div>
+
+
+    <!-- TECHNOLOGY CHIPS -->
+
+    <div class="technology-list reveal">
+
+      <span>Java</span>
+      <span>Spring Boot</span>
+      <span>PostgreSQL</span>
+      <span>MongoDB</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Git</span>
+      <span>Linux</span>
+      <span>Docker</span>
+
+    </div>
+
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="fade-section">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <p>Email: <a href="mailto:ammarkafle.edu@gmail.com">ammarkafle.edu@gmail.com</a></p>
-      <p>Phone/SMS: <a href="sms:+977123456789">+977 9821983665</a></p>
-      <p>Social Media: 
-        <a href="https://www.linkedin.com/in/ammar-kafle-a3b65838b/" target="_blank">LinkedIn</a> | 
-        <a href="https://github.com/kafleAmmar6" target="_blank">GitHub</a> |
-        <a href="https://instagram.com" target="_blank">Instagram</a>
+
+  <!-- =========================
+       CURRENT FOCUS
+  ========================= -->
+
+  <section class="section focus-section">
+
+    <div class="focus-container reveal">
+
+      <div>
+
+            <span class="section-label">
+                CURRENTLY BUILDING
+            </span>
+
+        <h2>
+          Learning today.
+          <span>Building tomorrow.</span>
+        </h2>
+
+        <p>
+
+          I'm currently focusing on Java,
+          Spring Boot, PostgreSQL, web development,
+          Linux, Git and deployment.
+
+        </p>
+
+      </div>
+
+
+      <div class="learning-path">
+
+        <div class="path-item">
+
+          <span>01</span>
+          Core Java
+
+        </div>
+
+        <div class="path-arrow">→</div>
+
+        <div class="path-item">
+
+          <span>02</span>
+          SQL
+
+        </div>
+
+        <div class="path-arrow">→</div>
+
+        <div class="path-item">
+
+          <span>03</span>
+          Spring Boot
+
+        </div>
+
+        <div class="path-arrow">→</div>
+
+        <div class="path-item">
+
+          <span>04</span>
+          Full Stack
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================= -->
+
+  <section id="contact"
+           class="section content-section contact-section">
+
+    <div class="section-heading reveal">
+
+        <span class="section-number">
+            05
+        </span>
+
+      <div>
+
+        <p class="section-label">
+          LET'S CONNECT
+        </p>
+
+        <h2>
+          Contact <span>Me</span>
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+      <div class="contact-content reveal">
+
+        <h3>
+          Have an idea?
+          <span>Let's build it.</span>
+        </h3>
+
+        <p>
+
+          Whether you want to discuss a project,
+          collaboration, learning or technology,
+          feel free to reach out.
+
+        </p>
+
+
+        <div class="contact-item">
+
+                <span class="contact-icon">
+                    ✉
+                </span>
+
+          <div>
+
+            <small>Email</small>
+
+            <a href="mailto:ammarkafle.edu@gmail.com">
+              ammarkafle.edu@gmail.com
+            </a>
+
+          </div>
+
+          <button id="copyEmail"
+                  class="copy-btn"
+                  title="Copy email">
+            📋
+          </button>
+
+        </div>
+
+
+        <div class="contact-item">
+
+                <span class="contact-icon">
+                    📱
+                </span>
+
+          <div>
+
+            <small>Phone</small>
+
+            <a href="tel:+9779821983665">
+              +977 9821983665
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="social-links">
+
+          <a href="https://www.linkedin.com/in/ammar-kafle-a3b65838/"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            LinkedIn
+
+          </a>
+
+          <a href="https://github.com/kafleAmmar6"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            GitHub
+
+          </a>
+
+          <a href="https://instagram.com"
+             target="_blank"
+             rel="noopener noreferrer">
+
+            Instagram
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONTACT CARD -->
+
+      <div class="contact-card reveal">
+
+        <div class="terminal-header">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <small>
+            contact.sh
+          </small>
+
+        </div>
+
+
+        <div class="terminal-body">
+
+          <p>
+                    <span class="terminal-green">
+                        $
+                    </span>
+            ./contact-ammar
+          </p>
+
+          <p>
+                    <span class="terminal-purple">
+                        >
+                    </span>
+            Connection established...
+          </p>
+
+          <p>
+                    <span class="terminal-purple">
+                        >
+                    </span>
+            Looking for opportunities...
+          </p>
+
+          <p class="terminal-success">
+            ✓ Ready to collaborate.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+  <div class="footer-content">
+
+    <div>
+
+      <a href="#home"
+         class="logo">
+
+        <span class="logo-bracket">&lt;</span>
+        Ammar
+        <span class="logo-highlight">Kafle</span>
+        <span class="logo-bracket">/&gt;</span>
+
+      </a>
+
+      <p>
+        Learn. Build. Improve.
       </p>
+
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Ammar Kafle. All Rights Reserved.</p>
-  </footer>
 
-  <script src="scripts/script.js"></script>
+    <div class="footer-right">
+
+      <p>
+        © <span id="currentYear"></span>
+        Ammar Kafle
+      </p>
+
+      <p>
+        Built with HTML • CSS • JavaScript
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- =========================
+     BACK TO TOP
+========================= -->
+
+<button id="backToTop"
+        class="back-to-top"
+        aria-label="Back to top">
+
+  ↑
+
+</button>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script src="scripts/script.js"></script>
+
 </body>
 </html>
